@@ -41,7 +41,7 @@ public class LevelControllerTest {
     }
 
     @Test
-    public void should_return_advanced_if_levelNumber_be_0_when_more_than_1() throws Exception {
+    public void should_return_advanced_if_levelNumber_be_2_when_more_than_1() throws Exception {
         ReflectionTestUtils.setField(levelController, "levelNumber", 2);
         mockMvc.perform(get("/level")
                 .contentType(MediaType.APPLICATION_JSON))
